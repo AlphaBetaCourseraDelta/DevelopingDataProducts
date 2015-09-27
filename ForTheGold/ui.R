@@ -1,4 +1,11 @@
 library(shiny)
+library(dplyr)
+library(ggplot2)
+
+# For some reason, I had to put this in BOTH ui.R and server.R otherwise, my code wouldn't work.
+
+base <- read.csv("data/ALLMEDALISTS.csv",skip=4)
+base <- base %>% mutate(country = as.character(NOC))
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(

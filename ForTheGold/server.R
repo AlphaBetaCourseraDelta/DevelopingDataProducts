@@ -7,7 +7,7 @@ base <- base %>% mutate(country = as.character(NOC))
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
-  
+
   output$distPlot <- renderPlot({
     basesub <- filter(base, Edition>=input$year[1]) %>%
       filter(Edition<=input$year[2])
@@ -28,6 +28,7 @@ shinyServer(function(input, output) {
     
     
     tb <- table(basesub$Medal, basesub$country)
+
     if(nrow(basesub)>0){
       ggplot(data=basesub,aes(x=factor(country),fill=factor(Medal)))+
         geom_bar(stat="bin",position="dodge")+
