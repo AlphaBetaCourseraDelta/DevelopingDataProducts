@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>For the Gold</title>
+  <meta name="description" content="">
+  <meta name="author" content="Coursera Student">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h1>For the Gold</h1>
+  <h3>Coursera Student</h3>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>History</h2>
+  <p>In 1896, 241 athletes from 14 countries got together in Athens.  They competed in a number of events to celebrate athletic achievement and to come together in harmony among the nations.  They modeled this loosely after the ancient Greek athletic festivals held in Olympia, and named this new event after the ancient Olympic games. </p>
+
+<p>Since then, every four summers, the world has come together to continue in that tradition.  99% of the focus is about amazing athletic achievement, celebrations across borders, and unity.  The other 1% is about which country will come home with the most hardware.  This app is about that 1%.</p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Top Overall Medal Winners</h2>
+  <p>Over all time, these are the top medal winners</p>
+
+<pre><code>##    country MedalCount
+## 1      USA       4335
+## 2      URS       2049
+## 3      GBR       1594
+## 4      FRA       1314
+## 5      ITA       1228
+## 6      GER       1211
+## 7      AUS       1075
+## 8      HUN       1053
+## 9      SWE       1021
+## 10     GDR        825
+</code></pre>
+
+<p></center></p>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Historical Medal Counts</h2>
+  <p>In graphic form, this is how those teams have done through the years.</p>
+
+<p><center>
+<img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> 
+</center></p>
+
+<p>But that&#39;s a confusing graph and it definitely doesn&#39;t show anything about specific sports or even specific metals.</p>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Summary</h2>
+  <p>Our app allows for targeted graphs. By allowing users to choose the time period, the sport, and the medal, they get the information they are looking for.  For example, if you were targeting gold medal archers between 1972 and 1984, this app hits this bullseye.</p>
+
+<p><center>
+<img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"> 
+</center></p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'serif', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
